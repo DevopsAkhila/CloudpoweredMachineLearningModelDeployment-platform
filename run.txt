@@ -1,1 +1,0 @@
-(base) C:\Users\Rohit94\Downloads\mlserve_flask_prototype_autotrain>python -m mlserve.app
