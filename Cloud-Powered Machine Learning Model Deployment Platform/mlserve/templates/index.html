@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MLServe – Local</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root{
+      --bg: #0b1020;
+      --panel: #12172a;
+      --panel-2: #151b30;
+      --text: #e6ebff;
+      --muted: #9fb0ff;
+      --accent: #6ea8fe;
+      --accent-2: #8b5cf6;
+      --success: #22c55e;
+      --warn: #f59e0b;
+      --danger: #ef4444;
+      --ring: 0 0 0 3px rgba(110,168,254,.25);
+      --shadow: 0 10px 25px rgba(0,0,0,.25);
+      --card-b: 14px;
+    }
+
+    /* Light mode support */
+    .light{
+      --bg: #f6f8ff;
+      --panel: #ffffff;
+      --panel-2: #ffffff;
+      --text: #0f172a;
+      --muted: #445069;
+      --accent: #2563eb;
+      --accent-2: #7c3aed;
+      --success: #16a34a;
+      --warn: #d97706;
+      --danger: #dc2626;
+      --shadow: 0 10px 25px rgba(2,6,23,.08);
+    }
+
+    *{ box-sizing: border-box }
+    html,body{ height:100% }
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text); background:
+        radial-gradient(1200px 800px at 100% -20%, rgba(124,58,237,.25), transparent 60%),
+        radial-gradient(900px 600px at -10% 110%, rgba(37,99,235,.25), transparent 60%),
+        var(--bg);
+    }
+
+    .container{ max-width:1100px; margin:40px auto; padding:0 20px }
+
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:16px 20px; border-radius:16px; background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.08); backdrop-filter: blur(10px); box-shadow: var(--shadow);
+    }
+    .brand{ display:flex; gap:12px; align-items:center; font-weight:700; letter-spacing:.3px }
+    .logo{
+      width:36px; height:36px; border-radius:10px;
+      background: conic-gradient(from 220deg, var(--accent), var(--accent-2));
+      box-shadow: inset 0 0 20px rgba(255,255,255,.35), 0 10px 20px rgba(0,0,0,.2);
+    }
+    .nav a{
+      color:var(--text); text-decoration:none; font-weight:600; opacity:.9;
+      border:1px solid rgba(255,255,255,.12); padding:8px 12px; border-radius:10px;
+    }
+    .right-actions{ display:flex; align-items:center; gap:10px }
+
+    .toggle{
+      appearance:none; width:52px; height:30px; border-radius:999px; position:relative; cursor:pointer;
+      background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.15);
+    }
+    .toggle:before{
+      content:""; position:absolute; inset:3px; width:24px; height:24px; border-radius:999px; background:#fff; transition: transform .25s ease;
+    }
+    .light .toggle{ background:#d9e2ff; border-color:#cfd9ff }
+    .light .toggle:before{ background:#0f172a }
+    .toggle:checked:before{ transform: translateX(22px) }
+
+    .grid{
+      display:grid; grid-template-columns: 1.1fr .9fr; gap:18px; margin-top:18px;
+    }
+    @media (max-width: 920px){ .grid{ grid-template-columns: 1fr } }
+
+    .card{
+      background: linear-gradient(180deg, var(--panel), var(--panel-2));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius: var(--card-b); padding:18px; box-shadow: var(--shadow);
+    }
+    h1{ margin:20px 0 10px; font-size: clamp(26px, 3vw, 34px) }
+    h2{ margin:8px 0 14px; font-size: clamp(18px, 2.4vw, 22px) }
+
+    label{ display:block; margin:10px 0 6px; font-weight:600; color:var(--muted); font-size:14px }
+    input, select{
+      width:100%; padding:12px 13px; border-radius:12px; border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04); color:var(--text);
+      outline:none; transition: box-shadow .15s ease, border-color .15s ease;
+    }
+    input:focus, select:focus{ border-color: var(--accent); box-shadow: var(--ring) }
+
+    .btn{
+      padding:11px 14px; border-radius:12px; border:none; cursor:pointer; font-weight:700;
+      color:#fff; background: linear-gradient(180deg, var(--accent), var(--accent-2));
+      box-shadow: 0 6px 15px rgba(124,58,237,.35); transition: transform .05s ease, box-shadow .15s ease;
+    }
+    .btn:hover{ box-shadow: 0 8px 18px rgba(124,58,237,.45) }
+    .btn:active{ transform: translateY(1px) }
+
+    .muted{ color:var(--muted); font-size:14px }
+
+    table{ width:100%; border-collapse: collapse; overflow:hidden; border-radius:14px; }
+    thead{ background: rgba(255,255,255,.04) }
+    th, td{ padding:12px 10px; border-bottom: 1px solid rgba(255,255,255,.08); text-align:left; font-size:14px }
+    tbody tr:hover{ background: rgba(255,255,255,.03) }
+
+    .badge{
+      display:inline-flex; align-items:center; gap:6px;
+      padding:4px 10px; border-radius:999px; font-size:12px; font-weight:700;
+      border:1px solid rgba(255,255,255,.15); background: rgba(255,255,255,.06);
+    }
+    .badge.active{ background: rgba(34,197,94,.15); border-color: rgba(34,197,94,.35); color:#b7f5c7 }
+
+    .chips{ display:flex; gap:8px; flex-wrap:wrap; margin:8px 0 }
+    .chip{
+      font-size:12px; padding:6px 10px; border-radius:999px;
+      background:rgba(255,255,255,.08); border:1px dashed rgba(255,255,255,.15); color:var(--muted);
+    }
+
+    /* Drag & drop */
+    .drop{
+      margin-top:8px; padding:14px; border:2px dashed rgba(255,255,255,.18); border-radius:12px;
+      background: rgba(255,255,255,.03); text-align:center; transition:border-color .2s ease, background .2s ease;
+    }
+    .drop.dragover{ border-color: var(--accent); background: rgba(110,168,254,.08) }
+
+    pre{
+      background: rgba(2,6,23,.55); border:1px solid rgba(255,255,255,.08);
+      border-radius:12px; padding:12px; overflow:auto; max-height:160px;
+    }
+    .light pre{ background:#0f172a; color:#e6ebff }
+
+    .pill-btn{
+      padding:8px 12px; border-radius:999px; border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06); color:var(--text); cursor:pointer; font-weight:700;
+    }
+    .pill-btn:hover{ border-color: var(--accent) }
+
+    /* toast */
+    .toast{
+      position: fixed; right:18px; bottom:18px; padding:12px 14px; border-radius:12px;
+      background: linear-gradient(180deg, #1b233a, #12172a); color:#e6ebff; border:1px solid rgba(255,255,255,.12);
+      box-shadow: var(--shadow); max-width: 420px; display:none;
+    }
+    .toast.show{ display:block; animation: fade .2s ease }
+    .toast.success{ border-color: rgba(34,197,94,.35) }
+    .toast.error{ border-color: rgba(239,68,68,.35) }
+    @keyframes fade{ from{opacity:0; transform: translateY(6px)} to{opacity:1; transform: translateY(0)} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>MLServe <span class="muted">Local</span></div>
+      </div>
+      <div class="right-actions">
+        <a href="/train" title="Auto Train">Auto Train →</a>
+        <label class="muted" style="display:flex;align-items:center;gap:10px">
+          <span>Dark</span>
+          <input id="mode" type="checkbox" class="toggle" aria-label="Toggle color mode">
+        </label>
+      </div>
+    </div>
+
+    <h1>Deploy & Observe your Models</h1>
+    <p class="muted">Upload an artifact or auto-train from CSV, then activate a version and hit <code>/predict/&lt;model&gt;</code>.</p>
+
+    <div class="grid">
+      <!-- Upload card -->
+      <div class="card">
+        <h2>Upload Model</h2>
+        <div class="chips">
+          <span class="chip">Supports: <strong>sklearn</strong>, <strong>torch</strong>, <strong>onnx</strong></span>
+          <span class="chip">Auth: Basic</span>
+          <span class="chip">Schema: JSON (optional)</span>
+        </div>
+
+        <form id="uploadForm" style="margin-top:8px">
+          <label>Basic Auth (username:password)</label>
+          <input type="text" id="auth" placeholder="admin:admin123" />
+
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px">
+            <div>
+              <label>Model Name</label>
+              <input type="text" name="name" placeholder="iris" required>
+            </div>
+            <div>
+              <label>Version (semver)</label>
+              <input type="text" name="version" value="1.0.0" required>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px">
+            <div>
+              <label>Framework</label>
+              <select name="framework">
+                <option value="sklearn">sklearn</option>
+                <option value="torch">torch</option>
+                <option value="onnx">onnx</option>
+              </select>
+            </div>
+            <div>
+              <label>Input Schema (JSON, optional)</label>
+              <input type="file" name="input_schema" accept=".json">
+            </div>
+          </div>
+
+          <label>Artifact File</label>
+          <div id="drop" class="drop">
+            <div><strong>Drag & drop</strong> your model file here, or click to select.</div>
+            <input id="artifact" type="file" name="artifact" required style="display:none">
+          </div>
+
+          <div style="margin-top:12px; display:flex; gap:10px; align-items:center">
+            <button type="submit" class="btn">Register</button>
+            <button type="button" class="pill-btn" id="clearBtn">Clear</button>
+          </div>
+        </form>
+
+        <h3 style="margin-top:16px">Response</h3>
+        <pre id="uploadOut">Awaiting upload…</pre>
+      </div>
+
+      <!-- Models table -->
+      <div class="card">
+        <h2>Models</h2>
+        <table>
+          <thead>
+            <tr><th>Name</th><th>Version</th><th>Framework</th><th>State</th><th>Active</th><th>Actions</th></tr>
+          </thead>
+          <tbody>
+          {% for m in models %}
+            {% if not m.versions %}
+              <tr><td>{{ m.name }}</td><td colspan="5" class="muted">No versions yet</td></tr>
+            {% else %}
+              {% for v in m.versions %}
+              <tr>
+                <td style="font-weight:700">{{ m.name }}</td>
+                <td>{{ v.version }}</td>
+                <td>{{ v.framework }}</td>
+                <td><span class="badge">{{ v.state }}</span></td>
+                <td>{% if v.active %}<span class="badge active">active</span>{% endif %}</td>
+                <td>
+                  <button class="pill-btn" onclick="activate('{{ m.name }}','{{ v.version }}')">Activate</button>
+                </td>
+              </tr>
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+          </tbody>
+        </table>
+
+        <div class="muted" style="margin-top:10px">
+          Tip: After activation, call <code>POST /predict/&lt;name&gt;</code> with a JSON body that matches the version’s schema.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- toast -->
+  <div id="toast" class="toast"></div>
+
+  <script>
+    // ---- color mode
+    const mode = document.getElementById('mode');
+    const savedMode = localStorage.getItem('mlserve_mode');
+    if(savedMode === 'light'){ document.body.classList.add('light'); mode.checked = true; }
+    mode.addEventListener('change', ()=>{
+      document.body.classList.toggle('light', mode.checked);
+      localStorage.setItem('mlserve_mode', mode.checked ? 'light' : 'dark');
+    });
+
+    // ---- toast
+    function toast(msg, type='success'){
+      const el = document.getElementById('toast');
+      el.className = 'toast show ' + type;
+      el.textContent = msg;
+      setTimeout(()=>{ el.classList.remove('show'); }, 3500);
+    }
+
+    // ---- activate
+    async function activate(name, version){
+      const auth = document.getElementById('auth').value || 'admin:admin123';
+      try{
+        const resp = await fetch(`/models/${name}/activate`, {
+          method: 'POST',
+          headers: { 'Authorization': 'Basic ' + btoa(auth), 'Content-Type': 'application/json' },
+          body: JSON.stringify({version})
+        });
+        const out = await resp.json();
+        if(!resp.ok) throw new Error(out.description || JSON.stringify(out));
+        toast(`Activated ${name}@${version}`, 'success');
+        setTimeout(()=> location.reload(), 600);
+      }catch(err){
+        toast('Activate failed: ' + err.message, 'error');
+      }
+    }
+    window.activate = activate;
+
+    // ---- drag & drop
+    const drop = document.getElementById('drop');
+    const artifactInput = document.getElementById('artifact');
+    drop.addEventListener('click', ()=> artifactInput.click());
+    ['dragenter','dragover'].forEach(e=> drop.addEventListener(e, ev=>{ ev.preventDefault(); drop.classList.add('dragover'); }));
+    ['dragleave','drop'].forEach(e=> drop.addEventListener(e, ev=>{ ev.preventDefault(); drop.classList.remove('dragover'); }));
+    drop.addEventListener('drop', ev=>{
+      if(ev.dataTransfer.files && ev.dataTransfer.files[0]){
+        artifactInput.files = ev.dataTransfer.files;
+        drop.querySelector('div').innerHTML = `<strong>Selected:</strong> ${ev.dataTransfer.files[0].name}`;
+      }
+    });
+    artifactInput.addEventListener('change', ()=>{
+      if(artifactInput.files[0]){
+        drop.querySelector('div').innerHTML = `<strong>Selected:</strong> ${artifactInput.files[0].name}`;
+      }else{
+        drop.querySelector('div').innerHTML = `<strong>Drag & drop</strong> your model file here, or click to select.`;
+      }
+    });
+
+    // ---- upload
+    const form = document.getElementById('uploadForm');
+    const outEl = document.getElementById('uploadOut');
+    document.getElementById('clearBtn').addEventListener('click', ()=>{
+      form.reset();
+      artifactInput.value = '';
+      drop.querySelector('div').innerHTML = `<strong>Drag & drop</strong> your model file here, or click to select.`;
+      outEl.textContent = 'Awaiting upload…';
+    });
+
+    form.addEventListener('submit', async (e)=>{
+      e.preventDefault();
+      const auth = document.getElementById('auth').value || 'admin:admin123';
+      const fd = new FormData(form);
+      // Ensure artifact from custom drop zone
+      if(artifactInput.files[0]) fd.set('artifact', artifactInput.files[0]);
+      try{
+        const resp = await fetch('/models/register', {
+          method: 'POST',
+          headers: { 'Authorization': 'Basic ' + btoa(auth) },
+          body: fd
+        });
+        const txt = await resp.text();
+        outEl.textContent = txt;
+        let j = {};
+        try{ j = JSON.parse(txt); }catch{}
+        if(resp.ok && j.ok){
+          toast('Model registered successfully', 'success');
+          setTimeout(()=> location.reload(), 600);
+        }else{
+          toast('Registration failed', 'error');
+        }
+      }catch(err){
+        outEl.textContent = 'Error: ' + err.message;
+        toast('Registration error: ' + err.message, 'error');
+      }
+    });
+  </script>
+</body>
+</html>

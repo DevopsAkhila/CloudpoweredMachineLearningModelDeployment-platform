@@ -1,0 +1,404 @@
+id,name,gender,age,weight,blood_group,blood_pressure,haemoglobin_count,sugar,platelets,white_blood_cell,red_blood_cell,eligibility
+0,nagma,female,22,52,A+,80,13.4,110,150000,7800,7.2,Healthy
+1,naveen,male,19,60,A+,90,17.3,80,450000,6000,3.3,Not Healthy
+2,sarfaras,male,53,73,B+,80,18.2,90,600000,7500,4.8,Not Healthy
+3,somshekar,male,49,45,O-,110,15.6,120,1000000,6700,3.9,Not Healthy
+4,somanath,male,56,56,B+,80,14.9,80,1500000,7300,4.6,Healthy
+5,sunil,male,60,62,O+,90,16.7,90,900000,7800,4.4,Not Healthy
+6,sagar,male,54,67,AB-,120,15,100,364000,8000,5.5,Healthy
+7,shivu,male,26,53,A+,90,19.1,70,210000,6900,5,Not Healthy
+8,shamala,female,32,66,B+,100,13.3,80,456200,9600,4,Healthy
+9,sangeetha,female,48,50,O+,90,14.1,100,523000,12100,3.7,Healthy
+10,eksha,female,33,75,B-,60,9.4,80,85246,11000,7.1,Not Healthy
+11,echcha,female,45,80,A-,80,12.9,90,50000,4500,3.8,Healthy
+12,imran,male,25,72,A-,120,15.5,90,85000,12200,3.4,Healthy
+13,saheil,male,36,69,O-,90,17.5,80,54000,16000,4.1,Not Healthy
+14,sampadha,female,26,58,O+,80,15.6,70,204530,11000,2.6,Not Healthy
+15,spandana,female,17,90,AB-,80,17.6,110,89000,3800,2.8,Not Healthy
+16,sushmitha,female,48,77,B+,70,12.6,120,458000,7000,6.3,Healthy
+17,rajesh,male,60,68,B+,80,18.1,150,154000,6800,7.3,Not Healthy
+18,raghav,male,44,53,O+,100,14.7,160,774555,11400,4.3,Healthy
+19,remo,male,32,59,A-,60,16.3,90,458712,5300,3.7,Not Healthy
+20,dharmesh,male,48,79,A-,80,17.7,90,550000,9200,3.2,Not Healthy
+21,shobitha,female,52,80,A+,90,10.9,80,590000,6200,3.6,Not Healthy
+22,srinidhi,male,34,70,B+,80,19.8,70,78000,6900,3.4,Not Healthy
+23,srikanth,male,17,60,O+,120,20.1,80,105000,45000,6.1,Not Healthy
+24,sanjeedha,female,42,50,AB-,100,11.1,70,215000,8300,4.6,Not Healthy
+25,kumar,male,23,100,B+,90,19.9,90,854419,8400,3.7,Not Healthy
+26,kamal,male,37,64,B+,80,18.6,100,527888,10300,4,Not Healthy
+27,kashinath,male,41,51,A+,100,19.5,110,1028300,9600,4.1,Not Healthy
+28,keshav,male,26,61,AB-,90,15.5,120,897400,6000,7.5,Healthy
+29,rishab,male,34,71,AB-,80,14.9,100,950000,46000,5.4,Healthy
+30,ranganath,male,47,81,A+,70,17.1,90,4800456,11000,6.2,Not Healthy
+31,ranganna,male,63,91,A+,90,13.1,80,55000,7800,4,Not Healthy
+32,reshma,female,28,52,A+,90,11.3,90,457000,9600,4,Not Healthy
+33,sandesh,male,60,62,A-,100,19.1,80,183000,13000,6.5,Not Healthy
+34,sowmya,female,21,72,A-,70,18.6,80,580000,10000,5,Not Healthy
+35,sowbhagya,female,26,82,AB-,90,13.5,110,910000,9800,4.9,Healthy
+36,bhagya,female,51,92,AB+,70,10.3,120,652000,10900,5.2,Not Healthy
+37,bhavana,female,32,53,O-,80,9.7,100,560000,6900,2.5,Not Healthy
+38,bhuvanesh,male,21,63,B+,80,15.5,90,850000,8200,4.2,Healthy
+39,bhuvan,male,22,73,B+,80,18,80,140000,9800,4.2,Not Healthy
+40,bhimappa,male,23,83,O+,90,19.1,80,652000,9100,4.1,Not Healthy
+41,chinnamma,female,24,93,O+,70,12.3,90,143000,9600,6.9,Healthy
+42,sannappa,male,25,54,O-,100,19.7,80,352000,9200,4.5,Not Healthy
+43,kapil,male,26,64,B+,80,17.9,120,62000,7900,3.1,Not Healthy
+44,anil,male,27,74,B-,80,19.7,100,740000,7400,7.4,Not Healthy
+45,anvithash,male,28,84,B+,80,19.3,80,856000,12200,6.2,Not Healthy
+46,anusha,female,29,94,AB+,70,12.4,90,905000,6400,4.7,Healthy
+47,anushka,female,30,55,O-,80,15,100,542000,8600,6.8,Healthy
+48,vedika,female,31,65,O+,70,10,110,850000,18900,3.5,Not Healthy
+49,vedanth,male,32,75,AB-,70,19.7,90,947000,21600,3.5,Not Healthy
+50,ashwin,male,33,85,A-,60,18.6,80,745000,11000,3.8,Not Healthy
+51,ayush,male,34,95,A-,100,20.3,100,600000,13000,6.1,Not Healthy
+52,ashwini,female,35,56,B-,90,20.9,80,451000,4300,3.7,Not Healthy
+53,karthik,male,36,66,B-,80,18.6,90,320000,8500,4.7,Not Healthy
+54,sheethal,female,37,76,B-,80,13,70,152400,9800,4.2,Healthy
+55,sunitha,female,38,86,B+,80,12.5,70,254000,9000,5,Healthy
+56,ranjana,female,39,96,A+,70,10.2,90,310000,11300,3.4,Not Healthy
+57,kiran,male,40,57,A+,90,17.1,90,105000,6000,6.2,Not Healthy
+58,ramesh,male,41,67,A-,80,20.5,100,850000,7200,4.3,Not Healthy
+59,rahul,male,42,77,AB-,100,16.6,70,145600,6900,6.9,Not Healthy
+60,amith,male,43,87,AB+,90,17,90,200000,10000,5.5,Not Healthy
+61,abhishek,male,44,97,B-,80,19,70,3620000,5000,5,Not Healthy
+62,rohit,male,45,58,B-,60,20.6,80,482000,7700,3.8,Not Healthy
+63,pradeep,male,46,68,B-,70,17.5,80,490000,7800,7.8,Not Healthy
+64,keerthi,male,47,78,O-,80,19.8,80,150000,6000,6,Not Healthy
+65,santhosh,male,48,88,O+,90,15,90,450000,6800,6.8,Healthy
+66,akshay,male,49,98,AB-,70,16.1,70,250000,9100,4.7,Not Healthy
+67,bharath,male,50,59,AB+,80,17.2,100,350000,9600,4.6,Not Healthy
+68,shamitha,female,51,69,B+,70,10.9,80,450000,8100,4.8,Not Healthy
+69,krishna,male,52,79,B+,70,15.6,80,550000,6900,6,Not Healthy
+70,krishnappa,male,53,89,AB-,80,15.2,80,650000,8300,5.2,Healthy
+71,dasappa,male,54,99,AB+,60,19.8,70,750000,14600,3.2,Not Healthy
+72,dhanamma,female,55,50,A+,90,10.3,80,850000,8200,7,Not Healthy
+73,basavappa,male,56,60,A-,100,14.8,70,950000,6300,6.3,Healthy
+74,bhaskar,male,57,70,O+,90,19.1,70,1050000,6400,3.4,Not Healthy
+75,hithesh,male,58,80,O+,120,18.1,60,150000,7800,4.9,Not Healthy
+76,sachin,male,59,90,O+,80,20.3,100,250000,6200,4,Not Healthy
+77,ajmal,male,60,100,O-,70,21.9,90,350000,7100,3.7,Not Healthy
+78,koushik,male,18,49,A-,80,20.1,80,450000,9600,5,Not Healthy
+79,vinay,male,56,64,O-,80,13.5,80,550000,11800,5,Healthy
+80,divya,female,19,87,AB-,80,10.8,80,650000,9400,3.8,Not Healthy
+81,harshitha,female,45,94,AB+,90,8.3,70,750000,5500,3.7,Not Healthy
+82,lakshmi,female,38,56,B+,70,7.5,90,850000,9600,6,Not Healthy
+83,srilakshmi,female,48,82,B-,70,13,80,950000,4200,4.2,Healthy
+84,varuni,female,59,64,A+,70,7.1,70,150000,3800,2.1,Not Healthy
+85,vani,female,27,75,A+,70,9.9,80,250000,10000,5,Not Healthy
+86,ankitha,female,56,59,A+,80,9.5,80,350000,10800,6.2,Not Healthy
+87,vidhya,female,37,48,B+,100,11.1,80,450000,5800,5,Not Healthy
+88,suvarna,female,58,61,B+,110,8,90,550000,13200,4.7,Not Healthy
+89,kruthika,female,50,40,B+,70,12.5,70,650000,10000,7.1,Healthy
+90,arpitha,female,63,57,A-,100,13,70,750000,9800,4.2,Healthy
+91,apoorva,female,56,89,A-,70,16.1,70,850000,12500,5.6,Not Healthy
+92,deeksha,female,22,63,A-,70,10.4,70,950000,5600,3.6,Not Healthy
+93,lokesh,male,42,50,B-,100,9.2,80,950000,7000,3.2,Not Healthy
+94,yashashwini,female,18,72,B-,70,11.6,100,850000,11900,3.9,Not Healthy
+95,devika,female,21,77,B-,90,10.3,110,750000,10200,5.2,Not Healthy
+96,mahesh,male,35,96,O-,80,11.2,70,650000,6600,6.6,Not Healthy
+97,maheshwari,female,21,75,O-,60,10,100,550000,9100,4,Not Healthy
+98,anu,female,50,65,O-,140,6.2,70,450000,5800,2.3,Not Healthy
+99,annapoorna,female,56,60,AB-,180,11.2,70,350000,10400,4.2,Not Healthy
+100,vandana,female,34,88,AB-,70,13.5,100,250000,3800,3.8,Healthy
+101,samskrithi,female,22,64,AB-,90,11.3,70,150000,10700,3.9,Not Healthy
+102,santhrupthi,female,17,74,AB+,60,13.9,90,100000,7000,7,Healthy
+103,samyuktha,female,45,84,AB+,70,10.2,80,200000,12700,4.2,Not Healthy
+104,shane warne,male,55,94,AB+,90,16.3,60,300000,9600,6.9,Not Healthy
+105,virat,male,21,55,O+,80,14.1,80,400000,6800,5.2,Healthy
+106,roshan,male,36,65,O+,90,6,90,500000,6500,6.5,Not Healthy
+107,gagan,male,47,75,O+,100,11.2,80,600000,13600,4.4,Not Healthy
+108,ganga,female,45,85,O-,80,11.8,110,700000,10200,4.2,Not Healthy
+109,kailash,male,54,95,O-,70,11.7,80,800000,4700,4.7,Not Healthy
+110,anvith,male,63,56,A-,90,11.7,90,900000,11400,4.7,Not Healthy
+111,suraksha,female,33,66,A+,80,10,120,110000,9000,3.9,Not Healthy
+112,somnath,male,42,76,B+,60,10.8,90,210000,6300,6.3,Not Healthy
+113,shravya,female,51,86,B-,90,14,100,310000,9800,4.8,Healthy
+114,naija,female,18,96,AB+,60,12.1,90,410000,10300,5.3,Healthy
+115,neeraja,female,47,57,AB-,80,12.4,60,510000,5600,4.3,Healthy
+116,ramya,female,24,67,AB-,70,13.2,80,610000,8500,4.8,Healthy
+117,niveditha,female,44,77,AB+,70,12.5,120,710000,9800,4.4,Healthy
+118,navya,female,55,87,B-,70,11.4,90,810000,9200,4.5,Not Healthy
+119,nagashree,female,60,52,B-,70,14,80,910000,10200,5.5,Healthy
+120,navyashree,female,50,60,B-,90,12.6,80,150000,3700,3.7,Healthy
+121,nagendra,male,40,73,B+,60,15,70,250000,6500,6.5,Healthy
+122,naresh,male,34,45,B+,70,16,80,350000,8900,4.5,Not Healthy
+123,noori,female,43,56,B+,80,14,100,450000,14900,7.5,Healthy
+124,aadya,female,65,62,A+,100,9.1,60,550000,5500,3.6,Not Healthy
+125,saanvi,female,30,67,A+,90,15.9,80,650000,5400,5.4,Not Healthy
+126,ruchitha,female,20,53,B+,90,12,90,750000,8200,4.5,Healthy
+127,rushitha,female,27,66,B+,60,11.4,80,850000,15200,4.3,Not Healthy
+128,vanya,female,52,50,A+,90,8.1,120,950000,5000,2.9,Not Healthy
+129,bhavyasri ,female,28,75,A+,70,11.1,100,120000,9300,3.9,Not Healthy
+130,bhavya,female,50,80,B+,90,8.2,90,220000,16300,2.7,Not Healthy
+131,ananya,female,36,72,O-,50,11.8,80,320000,12400,6.4,Not Healthy
+132,anishka,female,50,69,B+,90,8.6,100,420000,13200,2.7,Not Healthy
+133,aashriya,female,29,58,O+,100,12,90,520000,8400,8,Healthy
+134,dhanya,female,47,90,AB-,100,10.8,90,620000,10200,3.8,Not Healthy
+135,dhanyatha,female,48,77,A+,80,13.2,80,720000,11200,5.6,Healthy
+136,aaradhya,female,46,68,B+,90,9.3,80,820000,10200,5.7,Not Healthy
+137,mahi,female,45,53,O+,100,10,100,920000,9200,6.3,Not Healthy
+138,shreya,female,39,59,B-,90,15.5,80,170000,6800,6.8,Healthy
+139,priya,female,41,79,A-,90,11.1,120,270000,9200,4.7,Not Healthy
+140,priyanka,female,49,80,A-,90,16,200,370000,7400,6.9,Not Healthy
+141,arohi,female,37,70,O-,80,16.1,80,470000,6500,6.5,Not Healthy
+142,vidhitha,female,32,60,O+,90,12.9,90,570000,6800,6.8,Healthy
+143,rudra,male,41,50,AB-,80,17.5,100,670000,8500,5.8,Not Healthy
+144,rudrapriya,female,44,51,B+,90,11.1,150,870000,10500,4.1,Not Healthy
+145,pranamya,female,57,52,B+,90,8,80,970000,4200,3.3,Not Healthy
+146,parinitha,female,53,53,O+,100,13.8,80,180000,7200,7.2,Healthy
+147,tanvi,female,60,54,A-,100,17.9,90,280000,15200,3,Not Healthy
+148,karunya,female,37,55,A-,120,13.5,50,380000,8900,4.9,Healthy
+149,aarya,male,58,56,A+,90,10.5,90,480000,6300,6.3,Not Healthy
+150,avishka,female,32,57,B+,80,12.3,80,580000,6700,6.7,Healthy
+151,pranesh,male,40,58,O+,90,19.6,90,680000,11200,6.2,Not Healthy
+152,kanya,female,30,59,AB-,80,10.9,90,780000,15000,5.1,Not Healthy
+153,darshith,male,55,60,B+,90,18.3,90,880000,14600,2.9,Not Healthy
+154,darshitha,female,56,61,B+,90,8.4,70,980000,7000,3,Not Healthy
+155,sunaina,female,50,62,A+,100,11.1,80,150000,4700,4.7,Not Healthy
+156,lasya,female,66,63,AB-,90,13.9,70,250000,8000,4.5,Healthy
+157,lavanya,female,62,64,AB-,100,12.6,60,350000,7900,3.9,Healthy
+158,aparna,female,25,65,A+,120,10.9,120,450000,9000,5,Not Healthy
+159,arpana,female,17,67,A+,80,10.4,50,550000,10900,4.3,Not Healthy
+160,srija,female,42,68,A+,90,10.9,90,650000,9400,2.4,Not Healthy
+161,saadvitha,female,36,69,A-,90,14.3,180,750000,10200,4.8,Healthy
+162,advitha,female,38,70,A-,80,9.8,60,850000,6000,6,Not Healthy
+163,asvitha,female,46,71,AB-,80,9,60,950000,8100,3.2,Not Healthy
+164,christine,female,19,72,AB+,100,14.3,90,852000,9500,5.4,Healthy
+165,thanishka,female,22,73,O-,80,14.6,90,150000,10000,7.8,Healthy
+166,thanusha,female,27,74,B+,120,15.5,100,250000,11000,4.2,Healthy
+167,jivantika,female,34,75,B+,200,12.7,100,350000,2200,5.7,Healthy
+168,anika,female,39,76,O+,80,11,70,450000,6700,6.7,Not Healthy
+169,ayukta,female,47,77,O+,90,8.7,80,550000,12000,6.8,Not Healthy
+170,monika,female,56,78,O-,100,12.5,70,650000,9600,4.4,Healthy
+171,monisha,female,21,79,B+,150,8.7,100,750000,12800,3.1,Not Healthy
+172,mohini,female,17,80,B-,80,10.6,90,850000,12800,4.9,Not Healthy
+173,mohith,male,17,81,B+,80,13.1,70,950000,11200,5.2,Not Healthy
+174,mohan,male,54,82,AB+,90,11,70,1202500,8600,4.6,Not Healthy
+175,madhu,male,60,83,O-,50,16.5,70,150000,4200,3.4,Not Healthy
+176,madhukumar,male,21,84,O+,90,18.3,90,250000,12400,3.9,Not Healthy
+177,madhukar,male,33,85,AB-,80,13.2,90,350000,13000,5.8,Not Healthy
+178,manohar,male,42,86,A-,90,9.8,100,450000,9800,7,Not Healthy
+179,manoranjan,male,23,87,A-,90,11.9,110,550000,14000,4.1,Not Healthy
+180,manashwini,female,24,88,B-,90,10.3,90,650000,6000,6,Not Healthy
+181,manyatha,female,45,89,B-,70,10,70,750000,19100,3.7,Not Healthy
+182,meenakshi,female,42,90,B-,80,11.3,90,850000,12300,3.5,Not Healthy
+183,mouna,female,30,91,B+,70,12,80,950000,7500,7.5,Healthy
+184,namratha,female,54,92,A+,60,11.3,80,150000,5800,3.6,Not Healthy
+185,naina,female,40,93,A+,120,12,80,250000,6800,6.8,Healthy
+186,nayana,female,37,94,A-,50,16,80,350000,8900,6.8,Not Healthy
+187,ganavi,female,32,95,AB-,90,10.7,60,450000,12300,5.3,Not Healthy
+188,sanvika,female,28,96,AB+,180,12.2,80,550000,4500,4.5,Healthy
+189,dhanush,male,39,97,B-,60,19.5,80,650000,7500,3.4,Not Healthy
+190,dhanushree,female,21,98,B-,60,19.9,60,750000,16700,4.8,Not Healthy
+191,aadi,male,35,99,B-,70,19.1,80,850000,9200,3.4,Not Healthy
+192,aadhithya,male,46,100,O-,110,19.9,80,950000,9000,7.1,Not Healthy
+193,srinivas,male,32,105,O+,90,15.5,80,1500000,2600,2.8,Healthy
+194,srivathsa,male,42,50,AB-,70,21,80,150000,7000,5.6,Not Healthy
+195,sriranga,male,32,42,AB+,90,15.8,80,250000,5800,5.8,Not Healthy
+196,partha,male,49,87,B+,100,18.1,80,350000,9600,3.5,Not Healthy
+197,ram,male,50,94,B+,80,16.8,80,450000,4300,3,Not Healthy
+198,ramkumar,male,50,52,AB-,100,11.2,80,550000,26400,3.9,Not Healthy
+199,arvind,male,31,64,AB+,80,8.8,80,650000,10700,3.2,Not Healthy
+200,avinash,male,32,87,A+,90,12,80,750000,7900,3.9,Not Healthy
+201,vidhanth,male,33,54,A-,70,17.9,80,850000,4000,5.2,Not Healthy
+202,vydhyanath,male,34,67,O+,60,18,80,950000,5600,5.6,Not Healthy
+203,vybhavi,female,35,92,O+,90,8.5,80,150000,9200,7.2,Not Healthy
+204,vybhav,male,36,81,O+,90,8.8,80,250000,9600,5.5,Not Healthy
+205,simha,male,37,75,O-,70,12.6,80,350000,8500,5.8,Not Healthy
+206,aasya,female,38,59,A-,70,13.8,80,450000,7500,5.7,Healthy
+207,hamsa,female,39,63,O-,70,12,80,550000,10400,4.6,Healthy
+208,rashid,male,40,71,AB-,80,12.3,80,650000,6900,4.9,Not Healthy
+209,arjun,male,19,81,AB+,70,11.5,60,750000,6900,6.9,Not Healthy
+210,aarav,male,59,95,B+,100,7.3,60,850000,9800,3.9,Not Healthy
+211,geetha,female,54,75,B-,120,16,60,950000,5200,5.2,Not Healthy
+212,gayathri,female,40,45,A+,70,10.9,70,150000,8800,3.4,Not Healthy
+213,gnanesh,male,55,50,A+,80,10.9,80,250000,7400,3.7,Not Healthy
+214,ganesh,male,17,85,A+,80,13.7,80,350000,4900,5.2,Healthy
+215,gunashekar,male,16,63,B+,100,22,70,450000,5100,5.1,Not Healthy
+216,gowri,female,21,78,B+,70,12.8,70,550000,6000,7.8,Healthy
+217,gowramma,female,22,68,B+,100,12.2,80,650000,10500,4.3,Healthy
+218,govind,male,33,48,A-,90,11.8,70,750000,7000,5.6,Not Healthy
+219,lingaraju,male,23,39,A-,90,19.8,70,850000,8000,3.3,Not Healthy
+220,rayanna,male,36,40,A-,80,11.9,70,950000,8800,4.4,Not Healthy
+221,seenapa,male,24,88,B-,70,15.2,70,150000,6800,6.8,Healthy
+222,shravani,female,25,62,B-,60,14.1,70,250000,9800,5.6,Healthy
+223,sinchana,female,26,56,B-,90,13,70,350000,9200,4.6,Healthy
+224,shruthi,female,34,84,O-,60,16.1,80,450000,10000,5.5,Not Healthy
+225,anjana,female,27,76,O-,90,11.5,80,550000,12000,4.5,Not Healthy
+226,sanjana,female,28,85,O-,100,7.9,80,650000,7500,3.4,Not Healthy
+227,meghana,female,57,90,AB-,80,11.3,90,750000,7200,3.8,Not Healthy
+228,pranitha,female,29,50,AB-,70,13.6,80,850000,9700,7.9,Healthy
+229,lilly,female,59,67,AB-,50,9.6,110,950000,15700,3.8,Not Healthy
+230,muthamma,female,30,98,AB+,60,15.6,80,150000,9500,5.9,Not Healthy
+231,vedha,female,41,58,AB+,90,11.5,90,250000,8700,7.8,Not Healthy
+232,shekar,male,50,74,AB+,90,19.1,120,350000,8600,6.8,Not Healthy
+233,maala,female,51,75,O+,100,12.6,90,450000,4500,4.5,Healthy
+234,mansi,female,37,76,O+,100,15,100,550000,4100,5.2,Healthy
+235,radha,female,45,77,O+,70,7.9,90,650000,5700,5.7,Not Healthy
+236,raman,male,42,78,O-,80,19.1,60,750000,3600,6.3,Not Healthy
+237,lankesh,male,43,79,O-,70,12.7,80,850000,9600,6.9,Not Healthy
+238,yadav,male,44,80,A-,100,19.4,120,950000,9100,6.8,Not Healthy
+239,mohammed,male,45,81,A+,90,11.9,90,150000,7400,7.4,Not Healthy
+240,ali,male,46,82,B+,70,11.4,80,250000,5000,4.1,Not Healthy
+241,babu,male,57,83,B-,70,10.4,80,350000,4200,3.9,Not Healthy
+242,bangarappa,male,47,84,AB+,70,19.4,70,450000,11500,3.3,Not Healthy
+243,meera,female,62,85,AB-,90,13.4,80,550000,11000,6.1,Healthy
+244,shivashankar,male,48,86,AB-,90,12.2,100,650000,9800,4.6,Not Healthy
+245,shankar,male,48,87,AB+,100,16.3,60,750000,7200,2.6,Not Healthy
+246,william,male,48,88,B-,110,18.6,80,850000,5000,2.5,Not Healthy
+247,suma,female,54,89,B-,90,14.5,90,950000,6900,6.9,Healthy
+248,kruthi,female,59,90,B-,70,12.6,80,150000,10200,4.1,Healthy
+249,chaithra,female,56,91,B+,90,13.1,120,250000,5400,2.1,Healthy
+250,anjali,female,40,92,B+,80,15,100,350000,10400,4.5,Healthy
+251,neha,female,23,93,B+,80,17,90,450000,9800,5,Not Healthy
+252,vishnu,male,45,94,A+,80,15.9,80,85246,9100,4.7,Not Healthy
+253,yadvi,female,57,95,A+,80,15.4,100,50000,6200,6.2,Healthy
+254,jayram,male,51,96,B+,60,13,90,85000,8300,5.2,Not Healthy
+255,jayashree,female,34,97,B+,80,13.6,80,54000,9200,6.3,Healthy
+256,jyothi,female,49,98,A-,80,14.5,70,204530,10700,5.1,Healthy
+257,jaganath,male,38,99,A-,60,14,90,89000,9100,5.8,Healthy
+258,janavi,female,42,100,A-,80,13.9,90,458000,8400,5.5,Healthy
+259,bhuvanesh,male,35,105,A-,80,16.1,100,154000,4300,5.2,Not Healthy
+260,ganeshkar,male,30,50,A-,80,14.1,100,774555,9400,5.3,Healthy
+261,kalyan,male,49,42,A-,80,17,70,458712,5600,4.9,Not Healthy
+262,srujan,male,55,87,A+,80,15.5,70,550000,7200,5.4,Healthy
+263,sowndarya,female,45,94,A+,80,16.2,60,590000,8600,5.2,Not Healthy
+264,sannidhi,female,42,52,A+,80,14.4,60,78000,5000,4.5,Healthy
+265,siddarth,male,50,64,A+,80,14.2,60,105000,10500,5,Healthy
+266,indu,female,55,87,A+,80,13.2,60,215000,6800,5.3,Healthy
+267,padma,female,48,54,A+,80,13.9,80,854419,9500,4.8,Healthy
+268,punyashree,female,18,67,B-,80,16.3,80,527888,8500,4.9,Not Healthy
+269,puneetha,female,25,92,B-,80,15,80,1028300,6900,5.3,Healthy
+270,purvika,female,23,81,B-,80,14.3,60,897400,7200,5,Healthy
+271,poojitha,female,30,75,B-,80,13.8,60,950000,9000,4.5,Healthy
+272,pooja,female,56,59,B-,80,14.8,70,4800456,5600,5.5,Healthy
+273,pavithra,female,47,63,B-,80,15.5,60,55000,9600,6.9,Healthy
+274,surabhi,female,19,71,B-,80,14.4,80,457000,8500,5.8,Healthy
+275,moin,male,52,81,B+,80,16.5,70,183000,4700,4.6,Not Healthy
+276,ullas,male,20,95,B+,60,14,70,580000,4500,5.5,Healthy
+277,sharath,male,46,75,B+,60,15.7,80,910000,6300,4.8,Not Healthy
+278,vignesh,male,48,45,B+,60,14.5,80,652000,9400,6.4,Healthy
+279,gnana,female,24,50,B+,70,16.3,60,560000,5800,5.6,Not Healthy
+280,aashitosh,male,47,85,B+,80,13.3,60,850000,8100,5.2,Not Healthy
+281,aasil,male,55,63,AB-,80,15.5,70,140000,9100,6,Healthy
+282,anvith,male,20,78,AB-,70,14.6,80,652000,5500,4.8,Healthy
+283,purvith,male,19,68,AB-,70,16.4,70,143000,10800,5.7,Not Healthy
+284,pranam,male,33,48,AB-,80,16.9,70,352000,6700,6,Not Healthy
+285,prathish,male,20,39,A-,70,16,70,62000,5300,5.9,Not Healthy
+286,dhanvi,female,21,40,AB-,70,14.7,60,740000,9800,6,Healthy
+287,dhruvika,female,39,88,AB-,70,13.4,60,856000,7300,7.3,Healthy
+288,deekshika,female,56,62,AB+,70,15.9,60,905000,11000,5.1,Not Healthy
+289,druthi,female,42,69,AB+,70,16.6,60,542000,7100,5.3,Not Healthy
+290,dhisha,female,54,97,AB+,70,14.8,60,850000,8400,5.9,Healthy
+291,durga,female,47,56,AB+,80,14.9,60,947000,7000,5.7,Healthy
+292,saraswathi,female,30,84,AB+,80,16.7,80,745000,10200,5,Not Healthy
+293,raghu,male,50,86,AB+,90,14.9,70,600000,4700,5.4,Healthy
+294,raghavendra,male,22,51,AB+,60,14.3,70,451000,8300,5.8,Healthy
+295,divyashree,female,44,83,O-,70,15,80,320000,9600,6.5,Healthy
+296,deepthi,female,41,63,O-,70,16.8,60,152400,6300,5.9,Not Healthy
+297,divyank,male,53,85,O-,60,15.8,60,254000,7700,5.2,Not Healthy
+298,daisy,female,34,74,O-,60,13.5,60,310000,8600,4.9,Healthy
+299,sameer,male,23,54,O-,60,15.1,60,105000,11000,4.7,Healthy
+300,lavakush,male,45,94,O-,60,15,70,850000,9200,5.8,Healthy
+301,nayak,male,44,51,O+,60,16.9,70,145600,7200,5,Not Healthy
+302,dhyan,male,29,45,O+,70,14.8,60,200000,5000,7.1,Healthy
+303,diganth,male,55,50,O+,70,17,60,3620000,6700,6.1,Not Healthy
+304,darshan,male,33,60,O+,80,13.1,60,482000,6200,4.5,Not Healthy
+305,sudeep,male,41,70,O+,80,17.1,80,490000,9100,5.2,Not Healthy
+306,yash,male,52,80,O+,80,15.2,80,150000,4300,5.7,Healthy
+307,radhika,female,47,90,AB+,60,13.6,80,450000,7900,4.5,Healthy
+308,aindritha,female,43,100,AB-,80,13.9,80,250000,6900,4.9,Healthy
+309,rakshitha,female,51,65,A+,60,17.2,80,350000,8100,5.9,Not Healthy
+310,rakshith,male,46,74,A-,60,13.2,80,450000,11000,5.4,Not Healthy
+311,sudarshan,male,56,64,B+,60,13.7,60,550000,7500,5.6,Healthy
+312,ravi,male,24,81,B-,70,15.3,80,650000,6300,6.1,Healthy
+313,chandan,male,55,71,O-,80,17.3,70,750000,8200,4.8,Not Healthy
+314,chandra,male,39,86,O+,70,15.6,70,850000,9400,4.7,Not Healthy
+315,ravichandran,male,44,55,O-,70,13.8,60,950000,7800,4.4,Healthy
+316,laknath,male,35,74,B+,100,15.4,60,1050000,5000,5.2,Healthy
+317,rakesh,male,58,73,O+,70,15,70,150000,8100,4.9,Healthy
+318,bhargav,male,25,54,AB-,70,17.4,80,250000,7000,5.3,Not Healthy
+319,vaishnavi,female,30,89,A+,60,19.9,80,350000,6000,6.2,Not Healthy
+320,vaishali,female,57,98,B+,60,15.7,70,450000,10400,6.2,Not Healthy
+321,vikranth,male,27,65,O+,60,13.9,70,550000,9600,4.8,Healthy
+322,vikas,male,26,44,B-,60,16,60,650000,4500,4.9,Not Healthy
+323,yuvaraj,male,43,56,A-,80,15.9,80,750000,7800,4.5,Not Healthy
+324,dhanraj,male,40,87,A-,80,19.1,60,850000,5900,6.2,Not Healthy
+325,keshav,male,58,88,O-,80,14,70,950000,6700,6.5,Healthy
+326,kushal,male,47,77,O+,60,15.8,80,150000,8300,5.2,Not Healthy
+327,tejas,male,30,55,AB-,60,13.4,80,250000,10700,5.8,Not Healthy
+328,mannan,male,28,66,B+,70,20,60,350000,8600,6.5,Not Healthy
+329,meeraj,male,33,99,B+,60,14.1,70,450000,7800,5.1,Healthy
+330,sushma,female,43,76,O+,80,16.3,70,550000,9800,6,Not Healthy
+331,revanth,male,59,99,A-,70,13.5,80,650000,6700,4.5,Healthy
+332,revathi,female,34,82,A-,70,15.3,80,750000,10500,6.1,Healthy
+333,yuva,male,23,71,A+,80,17.7,80,850000,4300,5.5,Not Healthy
+334,bharathi,female,24,93,B+,80,15.4,80,950000,5600,4.5,Healthy
+335,shashi,male,28,70,O+,60,14.2,80,950000,10700,5.6,Healthy
+336,shashikumar,male,25,82,AB-,60,15.2,80,850000,9200,5.2,Healthy
+337,tushar,male,44,96,B+,70,14,60,750000,7500,6.2,Healthy
+338,tulsi,female,29,74,B+,80,17.8,80,650000,4700,4.5,Not Healthy
+339,sewag,male,25,82,A+,70,13.3,80,550000,7000,4.9,Not Healthy
+340,anil,male,32,93,AB-,70,14.3,70,450000,6700,5.9,Healthy
+341,anish,male,30,80,AB-,70,13.4,80,700000,7300,4.7,Not Healthy
+342,divya,female,44,73,A+,60,15,60,800000,7700,6.3,Healthy
+343,sirivanth,male,37,90,A+,60,16.2,80,900000,5500,5.7,Not Healthy
+344,farhan,male,31,82,A+,60,14.4,80,110000,8100,4.7,Healthy
+345,farheen,female,22,93,A-,60,13.5,100,210000,7900,6.4,Healthy
+346,fazira,female,33,71,A-,60,15.5,120,310000,4300,5.8,Healthy
+347,fatimah,female,43,74,AB-,60,17.8,100,410000,7200,5.5,Not Healthy
+348,faisal,male,38,85,AB+,80,13.6,90,510000,7300,6.4,Healthy
+349,faizan,male,35,96,O-,70,14.5,90,610000,9400,6.1,Healthy
+350,alia,female,32,78,B+,70,16.1,80,710000,9600,4.5,Not Healthy
+351,amal,female,29,98,B+,80,17.5,70,810000,9900,4.7,Not Healthy
+352,aarthi,female,37,99,O+,60,15,60,910000,7000,5.2,Healthy
+353,suguna,female,39,45,O-,60,13.6,90,150000,5800,4.5,Healthy
+354,prabhas,male,32,65,A-,60,14.6,60,250000,6800,5.1,Healthy
+355,mandeep,male,23,56,O-,60,15,90,350000,6300,4.6,Healthy
+356,sandeep,male,34,54,AB-,70,17.1,100,450000,7400,6.1,Not Healthy
+357,sundar,male,33,49,AB+,70,13.6,80,550000,11000,4.9,Healthy
+358,sundresh,male,47,61,B+,60,13,70,650000,5200,5.6,Not Healthy
+359,tariq,male,34,63,B-,60,17.2,50,750000,6000,4.5,Not Healthy
+360,tamanna,female,35,62,A+,60,14.7,60,850000,5800,6.2,Healthy
+361,thrisha,female,29,60,A+,80,13.7,90,950000,5400,5.8,Healthy
+362,rohini,female,33,70,A+,80,15,90,120000,10300,4.8,Healthy
+363,sravan,male,35,90,B+,80,17.8,100,220000,5900,5.2,Not Healthy
+364,swathi,female,36,80,B+,80,14.8,100,320000,9300,4.7,Healthy
+365,uttara,male,24,83,B+,80,13.5,70,420000,10700,6.3,Healthy
+366,anuradha,female,37,82,A-,80,15,80,520000,10500,5.3,Healthy
+367,kavya,female,38,81,A-,60,17.4,70,620000,6700,6.1,Not Healthy
+368,kavyashree,female,30,74,A-,80,14.9,100,720000,9400,5.9,Healthy
+369,mithun,male,39,75,B-,70,13.6,90,820000,10300,4.8,Healthy
+370,sachinshankar,male,40,76,B-,70,16.2,70,920000,9300,5.4,Not Healthy
+371,nagraj,male,28,77,B-,60,17.6,70,170000,6500,5,Not Healthy
+372,sachinnagraj,male,41,89,O-,60,15,70,270000,10500,5.5,Healthy
+373,nihaan,male,42,75,O-,70,13.7,90,370000,9200,4.9,Healthy
+374,yashika,female,43,65,O-,80,16.3,90,470000,8000,6.4,Not Healthy
+375,nithya,female,44,54,AB-,80,15.1,100,570000,9700,5.6,Healthy
+376,nityashree,female,58,87,AB-,70,16.4,110,670000,9100,5.2,Not Healthy
+377,nishanth,male,45,98,O-,70,13.8,90,870000,6400,4.8,Healthy
+378,prashanth,male,46,55,O+,60,15.2,70,970000,7700,5.5,Healthy
+379,omkar,male,47,85,AB-,80,16.1,90,180000,5400,5.7,Not Healthy
+380,prajwal,male,59,67,B+,60,15.3,80,280000,6500,4.9,Healthy
+381,nakshatra,female,48,49,B+,70,16.6,80,380000,5800,5.9,Not Healthy
+382,niharika,female,48,59,O+,80,16.8,80,480000,6000,6.5,Not Healthy
+383,nihar,male,49,76,A-,80,13.9,80,580000,5100,5,Healthy
+384,nandini,female,57,82,A-,60,15.4,60,680000,11000,4.5,Healthy
+385,nazia,female,63,93,A+,70,16.5,80,780000,8000,5.1,Not Healthy
+386,nazriya,female,46,71,B+,70,16.4,80,880000,5700,6.5,Not Healthy
+387,nagkumar,male,15,80,O+,80,16.7,60,980000,6200,5.2,Not Healthy
+388,nisha,female,51,58,AB-,80,15.5,80,150000,9500,6.4,Healthy
+389,nandan,male,41,96,B+,80,17,80,250000,7200,5.8,Not Healthy
+390,nandana,male,52,75,B+,80,15,80,350000,6300,5.3,Healthy
+391,joginder,male,36,67,A+,80,15.6,80,450000,5800,6.3,Not Healthy
+392,jogappa,male,57,84,AB-,80,14.8,90,550000,6600,5.5,Healthy
+393,sundari,female,43,99,AB-,60,13,90,650000,7400,5.4,Healthy
+394,bhavani,female,50,103,A+,80,14.1,100,750000,9500,4.6,Healthy
+395,dharma,male,55,109,A+,80,15.7,110,850000,6700,4.9,Not Healthy
+396,chinnu,female,42,60,A+,70,16.5,80,950000,7800,6.2,Not Healthy
+397,adithya,male,18,72,A-,80,15.8,70,852000,6600,5.4,Not Healthy
+398,vihaan,male,17,84,A-,60,14.2,80,150000,7200,5.9,Healthy
+399,arnav,male,58,96,AB-,80,15.8,100,250000,6800,6.1,Not Healthy
+400,ayaan,male,19,102,AB+,80,17.1,90,350000,8000,5.5,Not Healthy
+401,shaurya,male,23,62,O-,100,18.2,90,450000,9000,6.9,Not Healthy
+402,dhruv,male,35,85,A+,120,19,100,550000,11000,7.2,Not Healthy
